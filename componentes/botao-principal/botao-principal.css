@@ -7,6 +7,12 @@
     color: white;
     padding: 5px 20px;
     border-radius: 30px;
+    transition: 0.1s;
+}
+
+.btn-principal:hover {
+    background-color: #FFC07F;
+    color: #860E1C;
 }
 
 /* BOTAO PRINCIPAL fim */
