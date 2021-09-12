@@ -1,0 +1,12 @@
+/* BOTAO PRINCIPAL inicio */
+
+.btn-principal{
+    background-color: #E5571A;
+    width: 190px;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
+/* BOTAO PRINCIPAL fim */

@@ -1,0 +1,11 @@
+/* BOTAO CANCELAR inicio */
+
+.btn-cancelar {
+    background-color: white;
+    border: solid 1px #860E1C;
+    color: #860E1C;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+/* BOTAO CANCELAR fim */
