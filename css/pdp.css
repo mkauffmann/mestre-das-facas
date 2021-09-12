@@ -1,0 +1,28 @@
+main {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.imagem-produto {
+    background-color: #C4C4C4;
+    width: 300px;
+    height: 220px;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome-do-produto {
+    padding-left: 2px;
+    font-size: 30px;
+    width: 264px;
+}
+
+.preco {
+    padding-top: 10px;
+}
+
+.texto-desconto {
+    color: #860E1C;
+}
