@@ -33,13 +33,7 @@ body {
 .login-card {
     background-color: white;
     box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
-    height: calc(100vh - 84px);
-}
-
-@media (min-width: 576px){
-    .login-card {
-        height: calc(100vh - 94px);
-    }
+    height: 520px;
 }
 
 /* LOGIN CARD END  */
