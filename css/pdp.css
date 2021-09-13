@@ -2,6 +2,10 @@ main {
     font-family: 'Archivo Narrow', sans-serif;
 }
 
+header {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
 /* PRODUTO */
 
 .imagem-produto {
@@ -29,8 +33,57 @@ main {
 
 .preco {
     padding-top: 10px;
+    font-weight: bold;
 }
 
-.texto-desconto {
+.texto-desconto, .texto-categoria {
     color: #860E1C;
+}
+
+.texto-cartao-credito, .texto-boleto, .texto-pix {
+    font-size: 20px;
+    margin-left: 45px;
+}
+
+.texto-cartao-credito::before {
+    content: "";
+    background-image: url(../images/icone-cartao-credito.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    margin-top: -4px;
+    margin-left: -45px;
+    width: 40px;
+    height: 40px;
+}
+
+.texto-boleto::before {
+    content: "";
+    background-image: url(../images/icone-boleto.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    margin-top: -8px;
+    margin-left: -45px;
+    width: 40px;
+    height: 40px;
+}
+
+.texto-pix::before {
+    content: "";
+    background-image: url(../images/icone-pix.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -45px;
+    width: 40px;
+    height: 40px;
+}
+
+.col-descricao {
+    box-shadow: 2px 2px 5px black;
 }
