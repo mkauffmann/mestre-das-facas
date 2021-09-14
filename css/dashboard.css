@@ -16,10 +16,18 @@ CORES:
 body {
     font-family: 'Barlow', Arial, sans-serif;
 }
-/* MENU MOBILE INICIO  */
-.menu-mobile {
+
+.dashboard-custom {
+    position: relative;
+    z-index: 2;
+}
+
+/* MENU MOBILE HEADER INICIO  */
+.menu-mobile-header {
     height: 50px;
     box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    z-index: 1;
 }
 
 .id-usuario h4 {
@@ -27,4 +35,69 @@ body {
     color: #860E1C;
 }
 
-/* MENU MOBILE FIM  */
+/* MENU MOBILE HEADER FIM  */
+/* MENU ITEMS INICIO  */
+
+.menu-items-container {
+    z-index: 0;
+    transition: 0.3s ease-in;
+}
+
+.menu-items {
+    list-style: none;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.menu-item:hover {
+    background-color: #ffe4c9;
+}
+
+.menu-item::after {
+    content: "";
+    border-bottom: 1px #ccc solid;
+    width: 100%;
+    display: block;
+}
+
+
+.menu-item a {
+    text-decoration: none;
+    color: #170900;
+    display: block;
+    padding: 16px 0;
+}
+
+.menu-fechado {
+    transform: translateY(-400px);
+}
+
+/* MENU ITEMS FIM  */
+
+/* MENU LATERAL DESKTOP INICIO  */
+.id-usuario-desktop h3 {
+    font-family: 'Archivo Narrow', Arial, sans-serif;
+    color: #860E1C;
+}
+
+.id-usuario-desktop {
+    border: 1px #ccc solid;
+    padding: 24px 0;
+    border-bottom: none;
+}
+
+/* MENU LATERAL DESKTOP FIM */
+
+/* INICIO FORM  */
+
+.form-container {
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
+    height: 300px;
+}
+
+/* FORM FIM  */
