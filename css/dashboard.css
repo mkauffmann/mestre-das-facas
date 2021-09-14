@@ -38,9 +38,16 @@ body {
 /* MENU MOBILE HEADER FIM  */
 /* MENU ITEMS INICIO  */
 
-.menu-items-container {
+.menu-mobile {
+    position: relative;
+}
+
+.menu-mobile-items-container {
     z-index: 0;
     transition: 0.3s ease-in;
+    position: absolute;
+    left: 0;
+    top: 50px;
 }
 
 .menu-items {
@@ -51,16 +58,16 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #860E1C;
 }
 
 .menu-item:hover {
-    background-color: #ffe4c9;
+    background-color: #a54a55;
 }
 
 .menu-item::after {
     content: "";
-    border-bottom: 1px #ccc solid;
+    border-bottom: 1px white solid;
     width: 100%;
     display: block;
 }
@@ -68,13 +75,20 @@ body {
 
 .menu-item a {
     text-decoration: none;
-    color: #170900;
+    color:  white;
     display: block;
     padding: 16px 0;
 }
 
 .menu-fechado {
     transform: translateY(-400px);
+}
+
+.btn-arrow {
+    transition: 0.3s;
+}
+.btn-aberto {
+    transform: rotate(180deg);
 }
 
 /* MENU ITEMS FIM  */
@@ -87,7 +101,7 @@ body {
 
 .id-usuario-desktop {
     border: 1px #ccc solid;
-    padding: 24px 0;
+    padding: 24px 8px;
     border-bottom: none;
 }
 
@@ -97,7 +111,21 @@ body {
 
 .form-container {
     box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.25);
-    height: 300px;
+    padding: 32px;
+}
+
+.form-container h3,
+.form-container h4 {
+    font-family: 'Archivo Narrow', Arial, sans-serif;
+    color: #860E1C;
+}
+
+.custom-label{
+    font-weight: bold;
+}
+
+.obrigatorio {
+    color: #860E1C;
 }
 
 /* FORM FIM  */

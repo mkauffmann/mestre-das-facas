@@ -8,6 +8,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="./componentes/checkbox/checkbox.css">
+    <link rel="stylesheet" href="./componentes/botao-cancelar/botao-cancelar.css">
+    <link rel="stylesheet" href="./componentes/botao-principal/botao-principal.css">
     <link rel="stylesheet" href="./componentes/Footer/Footer css/footer.css">
     <link rel="stylesheet" href="./componentes/Header/Header css/header.css">
     <link rel="stylesheet" href="./css/dashboard.css">
@@ -161,7 +164,7 @@
                 <div class="col-12 menu-mobile-items-container menu-fechado">
                     <ul class="menu-items">
                         <li class="menu-item"><a href="">Meus Dados</a></li>
-                        <li class="menu-item"><a href="">Minhas Compras</a></li>
+                        <li class="menu-item"><a href="">Meus Pedidos</a></li>
                         <li class="menu-item"><a href="">Cartões Salvos</a></li>
                         <li class="menu-item"><a href="">Endereços</a></li>
                         <li class="menu-item"><a href="">Minhas Listas</a></li>
@@ -172,20 +175,18 @@
             <!-- MENU MOBILE FIM  -->
             <!-- MENU LATERAL INCIO  -->
             <div class="row">
-
-            
             <div class="menu-lateral-container col-lg-3 d-none d-lg-block">
                 <div class="menu-lateral mt-5">
-                    <div class="id-usuario-desktop d-flex justify-content-center">
+                    <div class="id-usuario-desktop d-flex justify-content-around align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 28 28" fill="none">
                             <path d="M7.33602 7.33366C7.33602 3.65176 10.3219 0.666992 14.0052 0.666992C17.6885 0.666992 20.6744 3.65176 20.6744 7.33366C20.6744 11.0156 17.6885 14.0003 14.0052 14.0003C12.2364 14.0003 10.5401 13.298 9.28938 12.0477C8.03866 10.7975 7.33602 9.10177 7.33602 7.33366ZM27.1602 24.917L24.7593 20.1003C23.911 18.4017 22.1735 17.3299 20.2742 17.3337H7.73617C5.83695 17.3299 4.09946 18.4017 3.25114 20.1003L0.850234 24.917C0.590187 25.4329 0.615903 26.0465 0.918197 26.5389C1.22049 27.0312 1.75625 27.3319 2.33413 27.3337H25.6763C26.2542 27.3319 26.7899 27.0312 27.0922 26.5389C27.3945 26.0465 27.4202 25.4329 27.1602 24.917Z" fill="#860E1C"/>
                             </svg>
-                        <h3 class="d-inline-block ms-2 mb-0">Nome do usuário</h3>
+                        <h3 class="d-inline-block ms-2 mb-0 text-center">Nome do usuário</h3>
                     </div>
                         <div class="col-12 menu-items-container">
                             <ul class="menu-items">
                                 <li class="menu-item"><a href="">Meus Dados</a></li>
-                                <li class="menu-item"><a href="">Minhas Compras</a></li>
+                                <li class="menu-item"><a href="">Meus Pedidos</a></li>
                                 <li class="menu-item"><a href="">Cartões Salvos</a></li>
                                 <li class="menu-item"><a href="">Endereços</a></li>
                                 <li class="menu-item"><a href="">Minhas Listas</a></li>
@@ -197,8 +198,153 @@
             <!-- MENU LATERAL FIM  -->
 
             <!-- FORM INICIO  -->
-            <div class="form-container col-12 col-lg-9 mt-5">
-
+            <div class="form-container col-12 col-lg-9 my-5">
+                <h3 class="mb-3">Editar meus dados</h3>
+                <form>
+                    <!-- NOME inicio  -->
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="nome" class="form-label custom-label">Nome completo</label>
+                            <input type="text" id="nome" class="form-control" value="NOME DO USUÁRIO">
+                        </div>
+                    </div>
+                     <!-- NOME fim  -->
+                     <div class="row">
+                        <!-- Email inicio  -->
+                        <div class="col-6 mb-3">
+                            <label for="email" class="form-label custom-label">Email</label>
+                            <input type="email" id="email" class="form-control" value="EMAILDOUSUARIO@GMAIL.COM">
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="emailConfirmar" class="form-label custom-label">Confirmar Email</label>
+                            <input type="email" id="emailConfirmar" class="form-control">
+                        </div>
+                    </div>
+                        <!-- Email fim  -->
+                        <div class="row">
+                            <!-- CPF inicio  -->
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="cpf" class="form-label custom-label">CPF</label>
+                                <input type="text" id="cpf" class="form-control" value="123.456.789-10">
+                            </div>
+                            <!-- CPF fim -->
+                            <!-- Data de nascimento inicio  -->
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="data-nascimento" class="form-label custom-label">Data de nascimento</label>
+                                <input type="date" id="data-nascimento" class="form-control" value="1985-11-11">
+                            </div>
+                            <!-- Data de nascimento fim  -->
+                        </div>
+                        <div class="row">
+                            <!-- genero inicio  -->
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="genero" class="form-label custom-label">Gênero</label>
+                                <select name="" id="genero" class="form-select">
+                                    <option value="" disabled>Selecione</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="nao-binario">Não Binário</option>
+                                    <option value="outro">Outros</option>
+                                    <option value="nd" selected>Prefiro não dizer</option>
+                                </select>
+                            </div>
+                            <!-- genero fim  -->
+                            <!-- estado civil inicio  -->
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="estado-civil" class="form-label custom-label">Estado Civil</label>
+                                <select name="" id="estado-civil" class="form-select">
+                                    <option value="" selected disabled>Selecione</option>
+                                    <option value="solteiro">Solteiro/a</option>
+                                    <option value="casado">Casado/a</option>
+                                    <option value="divorciado">Divorciado/a</option>
+                                    <option value="outro">Outros</option>
+                                </select>
+                            </div>
+                            <!-- estado civil fim  -->
+                        </div>
+                        <div class="row mt-3">
+                            <!-- telefone inicio  -->
+                            <label for="telefone" class="form-label custom-label">Telefones</label>
+                            <div class="col-12 col-md-4 mb-3">
+                                <select name="" id="descricao-tel" class="form-select">
+                                    <option value="" selected>Celular</option>
+                                    <option value="residencia">Fixo Residência</option>
+                                    <option value="trabalho">Fixo Trabalho</option>
+                                    <option value="outro">Outros</option>
+                                </select>
+                            </div>
+                            <div class="col-4 col-md-2 mb-3">
+                                <input type="text" id="ddd" class="form-control" value="11">
+                            </div>
+                            <div class="col-8 col-md-6 mb-3">
+                                <input type="text" id="telefone" class="form-control" value="90000-4333">
+                            </div>
+                            <div class="col-12 d-flex justify-content-between">
+                                <div class="mb-3 form-check col-6">
+                                    <input type="checkbox" class="form-check-input custom-check" id="whatsapp">
+                                    <label class="form-check-label label-check-custom" for="whatsapp">Receber notificações por Whatsapp</label>
+                                </div>
+                                <button type="reset" class="btn-cancelar">Adicionar telefone</button>
+                            </div>
+                            <!-- telefone fim  -->
+                        </div>
+                        <div class="row mt-3">
+                            <!-- senha inicio  -->
+                            <h4>Trocar de Senha</h4>
+                            <div class="col-12 col-md-6 mb-3 mt-3">
+                                <label for="senha" class="form-label custom-label">Senha atual<span class="obrigatorio">*</span></label>
+                                <input type="text" id="senha" class="form-control" placeholder="Digite sua senha" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="senha" class="form-label custom-label">Nova senha</label>
+                                    <input type="text" id="senha" class="form-control" placeholder="Digite sua senha" required>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="confirmar-senha" class="form-label custom-label">Confirme sua senha</label>
+                                    <input type="text" id="confirmar-senha" class="form-control" placeholder="Digite novamente sua senha" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- senha fim  -->
+                        <!-- checkbox inicio  -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input custom-check" id="dados" checked>
+                                    <label class="form-check-label label-check-custom" for="dados">Compartilhar meus dados com parceiros</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input custom-check" id="novidades-email">
+                                    <label class="form-check-label label-check-custom" for="novidades-email">Receber novidades por email</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input custom-check" id="novidades-sms">
+                                    <label class="form-check-label label-check-custom" for="novidades-sms">Receber novidades por SMS</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input custom-check" id="ligacoes">
+                                    <label class="form-check-label label-check-custom" for="ligacoes">Receber ligações telefônicas</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input custom-check" id="mala-direta">
+                                    <label class="form-check-label label-check-custom" for="mala-direta">Receber mala direta</label>
+                                </div>
+                                <p class="mt-3"><span class="obrigatorio">*</span>Campos obrigatórios</p>
+                            </div>
+                        </div>
+                        <!-- checkbox fim  -->
+                        <!-- BOTÕES inicio  -->
+                        <div class="row my-3">
+                            <div class="col-12 d-flex justify-content-end">
+                                <button type="reset" class="btn-cancelar mx-2">Cancelar</button>
+                                <button type="submit" class=btn-principal>Confirmar</button>
+                            </div>
+                        </div>
+                    <!-- BOTÕES fim  -->
+                    
+                </form>
+                
             </div>
             <!-- FORM FIM  -->
         </div>

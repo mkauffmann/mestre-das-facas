@@ -5,6 +5,7 @@ let itensMenu = document.querySelector('.menu-mobile-items-container');
 
 btnArrow.addEventListener('click', () => {
 itensMenu.classList.toggle('menu-fechado')
+btnArrow.classList.toggle('btn-aberto')
 });
 
 //MENU MOBILE FIM
