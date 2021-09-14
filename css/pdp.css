@@ -84,6 +84,19 @@ header {
     height: 40px;
 }
 
-.col-descricao {
+.col-descricao, .col-especificacoes {
     box-shadow: 2px 2px 5px black;
+}
+
+.texto-avalie-produto::after {
+    content: "";
+    background-image: url(../images/Classificacao_Estrelas2.png);
+    background-size: 160px;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    margin-top: -34px;
+    margin-left: 185px;
+    width: 160px;
+    height: 40px;
 }
