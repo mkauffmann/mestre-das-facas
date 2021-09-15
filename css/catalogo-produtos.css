@@ -32,3 +32,11 @@ main, header, footer {
     }
     
 }
+
+
+@media (min-width:1000px) and (max-width: 1200px) {
+    .titulo-filtro::after {
+    display: none;
+    }    
+    
+}
