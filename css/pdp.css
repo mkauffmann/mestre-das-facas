@@ -100,3 +100,10 @@ header {
     width: 160px;
     height: 40px;
 }
+
+@media (min-width:400px) and (max-width: 768px) {
+    .caixa-cor-cabo {
+        margin-bottom: 20px;
+    }
+    
+}
