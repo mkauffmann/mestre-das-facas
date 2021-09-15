@@ -1,10 +1,8 @@
-main {
+main, header, footer {
     font-family: 'Archivo Narrow', sans-serif;
 }
 
-header {
-    font-family: 'Archivo Narrow', sans-serif;
-}
+
 
 /* PRODUTO */
 
