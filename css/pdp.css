@@ -45,7 +45,7 @@ main, header, footer {
 
 .texto-cartao-credito::before {
     content: "";
-    background-image: url(../images/icone-cartao-credito.png);
+    background-image: url(../img/icone-cartao-credito.png);
     background-size: 35px;
     background-repeat: no-repeat;
     display: block;
@@ -58,7 +58,7 @@ main, header, footer {
 
 .texto-boleto::before {
     content: "";
-    background-image: url(../images/icone-boleto.png);
+    background-image: url(../img/icone-boleto.png);
     background-size: 35px;
     background-repeat: no-repeat;
     display: block;
@@ -71,7 +71,7 @@ main, header, footer {
 
 .texto-pix::before {
     content: "";
-    background-image: url(../images/icone-pix.png);
+    background-image: url(../img/icone-pix.png);
     background-size: 35px;
     background-repeat: no-repeat;
     display: block;
@@ -88,7 +88,7 @@ main, header, footer {
 
 .texto-avalie-produto::after {
     content: "";
-    background-image: url(../images/Classificacao_Estrelas2.png);
+    background-image: url(../img/Classificacao_Estrelas2.png);
     background-size: 160px;
     background-repeat: no-repeat;
     display: block;
