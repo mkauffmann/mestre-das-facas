@@ -9,3 +9,16 @@ btnArrow.classList.toggle('btn-aberto')
 });
 
 //MENU MOBILE FIM
+
+//TROCAR CARD ESQUERDA INICIO
+let links = document.querySelectorAll('.menu-item a');
+let form = document.querySelector('.form-container');
+
+for(link of links){
+    link.addEventListener('click', () => {
+        if(link.innerText == 'Meus Dados')
+        form.classList.toggle('d-none');
+    })
+}
+
+//TROCAR CARD ESQUERDA FIM
