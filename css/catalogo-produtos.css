@@ -15,7 +15,7 @@ main, header, footer {
 
 .titulo-filtro::after {
     content: "";
-    background-image: url(../images/icone-diminuir-filtros.png);
+    background-image: url(../img/icone-diminuir-filtros.png);
     background-size: 30px;
     background-repeat: no-repeat;
     display: block;
