@@ -148,4 +148,8 @@ body {
     color: #444;
 }
 
+.lista-prod {
+    border: 1px #ccc solid;
+}
+
 /* LISTA FIM  */

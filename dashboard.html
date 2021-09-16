@@ -163,11 +163,11 @@
                 </div>
                 <div class="col-12 menu-mobile-items-container menu-fechado">
                     <ul class="menu-items">
-                        <li class="menu-item"><a href="">Meus Dados</a></li>
-                        <li class="menu-item"><a href="">Meus Pedidos</a></li>
-                        <li class="menu-item"><a href="">Cartões Salvos</a></li>
-                        <li class="menu-item"><a href="">Endereços</a></li>
-                        <li class="menu-item"><a href="">Minhas Listas</a></li>
+                        <li class="menu-item"><a href="#" onclick="mostrarDados();">Meus Dados</a></li>
+                        <li class="menu-item"><a href="#">Meus Pedidos</a></li>
+                        <li class="menu-item"><a href="#" onclick="mostrarCartoes();">Cartões Salvos</a></li>
+                        <li class="menu-item"><a href="#" onclick="mostrarEnderecos();">Endereços</a></li>
+                        <li class="menu-item"><a href="#" onclick="mostrarListas();">Minhas Listas</a></li>
                         <li class="menu-item"><a href="">Sair</a></li>
                     </ul>
                 </div>
@@ -185,11 +185,11 @@
                     </div>
                         <div class="col-12 menu-items-container">
                             <ul class="menu-items">
-                                <li class="menu-item"><a href="">Meus Dados</a></li>
-                                <li class="menu-item"><a href="">Meus Pedidos</a></li>
-                                <li class="menu-item"><a href="">Cartões Salvos</a></li>
-                                <li class="menu-item"><a href="">Endereços</a></li>
-                                <li class="menu-item"><a href="">Minhas Listas</a></li>
+                                <li class="menu-item"><a href="#" onclick="mostrarDados();">Meus Dados</a></li>
+                                <li class="menu-item"><a href="#">Meus Pedidos</a></li>
+                                <li class="menu-item"><a href="#" onclick="mostrarCartoes();">Cartões Salvos</a></li>
+                                <li class="menu-item"><a href="#" onclick="mostrarEnderecos();">Endereços</a></li>
+                                <li class="menu-item"><a href="#" onclick="mostrarListas();">Minhas Listas</a></li>
                                 <li class="menu-item"><a href="">Sair</a></li>
                             </ul>
                         </div>
@@ -198,7 +198,7 @@
             <!-- MENU LATERAL FIM  -->
 
             <!-- FORM INICIO  -->
-            <div class="form-container col-12 col-lg-9 my-5 card-esquerda d-none">
+            <div class="form-container col-12 col-lg-9 my-5 card-esquerda">
                 <h3 class="mb-3">Editar meus dados</h3>
                 <form>
                     <!-- NOME inicio  -->
@@ -348,32 +348,202 @@
             </div>
             <!-- FORM FIM  -->
             <!-- MINHA LISTAS INCIO  -->
-            <div class="card-esquerda col-12 col-lg-9 my-5 container-listas">
+            <div class="card-esquerda col-12 col-lg-9 my-5 container-listas d-none">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-between mb-4">
                         <h3>Minhas listas</h3>
                         <button class="btn-principal">Criar lista</button>
                     </div>
                     
-                    <div class="card-lista d-flex flex-column mb-4">
+                    <div class="card-lista d-flex flex-column">
                         <div class="nome-lista"><h5>Facas de cozinha</h5></div>
                         <div class="infos-lista">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit eligendi error culpa, neque aut necessitatibus vitae blanditiis dolorum simili</div>
-                        <button class="btn-cancelar mt-3 align-self-end">Ver mais</button>
+                        <button class="btn-cancelar mt-3 align-self-end btn-ver-lista">Ver mais</button>
                     </div>
-                    <div class="card-lista d-flex flex-column mb-4">
+                    <!-- LISTA TESTE INICIO  -->
+                    <div class="lista-prod my-2 d-none">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">Descrição do produto</th>
+                                  <th scope="col">Preço</th>
+                                  <th scope="col" colspan="2"></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td scope="row">1</td>
+                                      <td>Faqueiro Ginzu Completo</td>
+                                      <td>R$ 1500,00</td>
+                                      <td><button class="btn-principal">Adicionar ao carrinho</button></td>
+                                      <td><button class="btn-cancelar">Excluir</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">2</td>
+                                    <td>Faca de Legumes Tramontina</td>
+                                    <td>R$ 50,00</td>
+                                    <td><button class="btn-principal">Adicionar ao carrinho</button></td>
+                                    <td><button class="btn-cancelar">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">3</td>
+                                    <td>Cutelo Loko</td>
+                                    <td>R$ 250,00</td>
+                                    <td><button class="btn-principal">Adicionar ao carrinho</button></td>
+                                    <td><button class="btn-cancelar">Excluir</button></td>
+                                </tr>
+                              </tbody>
+                        </table>
+                    </div>
+                    <!-- LISTA TESTE FIM  -->
+                    <div class="card-lista d-flex flex-column mt-4">
                         <div class="nome-lista"><h5>Materiais para churrasco</h5></div>
                         <div class="infos-lista">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit eligendi error culpa, neque aut necessitatibus vitae blanditiis dolorum simili</div>
-                        <button class="btn-cancelar mt-3 align-self-end">Ver mais</button>
+                        <button class="btn-cancelar mt-3 align-self-end btn-ver-lista">Ver mais</button>
                     </div>
-                    <div class="card-lista d-flex flex-column mb-4">
+                    <!-- LISTA TESTE INICIO  -->
+                    <div class="lista-prod my-2 d-none">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">Descrição do produto</th>
+                                  <th scope="col">Preço</th>
+                                  <th scope="col" colspan="2"></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td scope="row">1</td>
+                                      <td>Faqueiro Ginzu Completo</td>
+                                      <td>R$ 1500,00</td>
+                                      <td><button class="btn-principal">Adicionar ao carrinho</button></td>
+                                      <td><button class="btn-cancelar">Excluir</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">2</td>
+                                    <td>Faca de Legumes Tramontina</td>
+                                    <td>R$ 50,00</td>
+                                    <td><button class="btn-principal">Adicionar ao carrinho</button></td>
+                                    <td><button class="btn-cancelar">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">3</td>
+                                    <td>Cutelo Loko</td>
+                                    <td>R$ 250,00</td>
+                                    <td><button class="btn-principal">Adicionar ao carrinho</button></td>
+                                    <td><button class="btn-cancelar">Excluir</button></td>
+                                </tr>
+                              </tbody>
+                        </table>
+                    </div>
+                    <!-- LISTA TESTE FIM  -->
+                    <div class="card-lista d-flex flex-column mt-4">
                         <div class="nome-lista"><h5>Espadas legais</h5></div>
                         <div class="infos-lista">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit eligendi error culpa, neque aut necessitatibus vitae blanditiis dolorum simili</div>
-                        <button class="btn-cancelar mt-3 align-self-end">Ver mais</button>
+                        <button class="btn-cancelar mt-3 align-self-end btn-ver-lista">Ver mais</button>
                     </div>
+                    <!-- LISTA TESTE INICIO  -->
+                    <div class="lista-prod my-2 d-none">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">Descrição do produto</th>
+                                  <th scope="col">Preço</th>
+                                  <th scope="col" colspan="2"></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td scope="row">1</td>
+                                      <td>Faqueiro Ginzu Completo</td>
+                                      <td>R$ 1500,00</td>
+                                      <td><button class="btn-principal">Adicionar ao carrinho</button></td>
+                                      <td><button class="btn-cancelar">Excluir</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">2</td>
+                                    <td>Faca de Legumes Tramontina</td>
+                                    <td>R$ 50,00</td>
+                                    <td><button class="btn-principal">Adicionar ao carrinho</button></td>
+                                    <td><button class="btn-cancelar">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">3</td>
+                                    <td>Cutelo Loko</td>
+                                    <td>R$ 250,00</td>
+                                    <td><button class="btn-principal">Adicionar ao carrinho</button></td>
+                                    <td><button class="btn-cancelar">Excluir</button></td>
+                                </tr>
+                              </tbody>
+                        </table>
+                    </div>
+                    <!-- LISTA TESTE FIM  -->
+            </div>
             </div>
             <!-- MINHAS LISTAS FIM -->
+
+            <!-- MEUS CARTOES INICIO -->
+            <div class="card-esquerda col-12 col-lg-9 my-5 container-cartoes d-none">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between mb-4">
+                        <h3>Meus cartões</h3>
+                        <button class="btn-principal">Adicionar cartão</button>
+                    </div>
+                    
+                    <div class="card-lista d-flex flex-column">
+                        <div class="nome-lista"><h5>Cartão principal</h5></div>
+                        <div class="numero-cartao"><strong>XXXX-XXXX-XXXX-6888</strong></div>
+                        <div class="infos-titular d-flex flex-column  mt-1">
+                            <div class="titular-cartao">NOME DO TITULAR</div>
+                            <div class="cpf-titular"><strong>CPF:</strong> 123.456.789-09</div>
+                            <div class="validade"><strong>Validade: </strong>02/22</div>
+                            <div class="codigo"><strong>CVV: </strong>123</div>
+                        </div>
+                        
+                        
+                        <button class="btn-cancelar align-self-end btn-ver-lista">Editar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- MEUS CARTOES FIM  -->
+             <!-- MEUS ENDERECOS INICIO -->
+             <div class="card-esquerda col-12 col-lg-9 my-5 container-enderecos d-none">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between mb-4">
+                        <h3>Meus Endereços</h3>
+                        <button class="btn-principal">Adicionar endereço</button>
+                    </div>
+                    
+                    <div class="card-lista d-flex flex-column mb-3">
+                        <div class="nome-endereco"><h5>Casa</h5></div>
+                        <div class="infos-endereco d-flex flex-column  mt-1">
+                            <div class="logradouro">Avenida Domingos de Morais</div>
+                            <div class="numero"><strong>Número:</strong> 731</div>
+                            <div class="complemento"><strong>Complemento: </strong>Casa 3B</div>
+                            <div class="cep"><strong>CEP: </strong>0000-000</div>
+                            <div class="cidade"><strong>Cidade: </strong>São Paulo/SP</div>
+                        </div>
+                        <button class="btn-cancelar align-self-end btn-ver-lista">Editar</button>
+                    </div>
+                    <div class="card-lista d-flex flex-column">
+                        <div class="nome-endereco"><h5>Trabalho</h5></div>
+                        <div class="infos-endereco d-flex flex-column  mt-1">
+                            <div class="logradouro">Rua Capitão Macedo</div>
+                            <div class="numero"><strong>Número:</strong> 580</div>
+                            <div class="complemento"><strong>Complemento: </strong>Laboratório - Galpão 1</div>
+                            <div class="cep"><strong>CEP: </strong>0000-000</div>
+                            <div class="cidade"><strong>Cidade: </strong>São Paulo/SP</div>
+                        </div>
+                        <button class="btn-cancelar align-self-end btn-ver-lista">Editar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- MEUS ENDERECOS FIM  -->
         </div>
-        </div>
+        
 
     </main>
         <!-- INICIO FOOTER DESKTOP -->
