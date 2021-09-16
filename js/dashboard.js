@@ -31,25 +31,34 @@ function ocultarTodosOsCardsEsquerdos(){
 function mostrarDados(){
     ocultarTodosOsCardsEsquerdos();
     form.classList.remove('d-none');
-    manipularMenu();
+    if(document.body.clientWidth <= 975){
+        manipularMenu();
+    }
+    
 }
 
 function mostrarListas(){
     ocultarTodosOsCardsEsquerdos();
     lista.classList.remove('d-none');
-    manipularMenu();
+    if(document.body.clientWidth <= 975){
+        manipularMenu();
+    }
 }
 
 function mostrarCartoes(){
     ocultarTodosOsCardsEsquerdos();
     cartoes.classList.remove('d-none');
-    manipularMenu();
+    if(document.body.clientWidth <= 975){
+        manipularMenu();
+    }
 }
 
 function mostrarEnderecos(){
     ocultarTodosOsCardsEsquerdos();
     enderecos.classList.remove('d-none');
-    manipularMenu();
+    if(document.body.clientWidth <= 975){
+        manipularMenu();
+    }
 }
 
 //TROCAR CARD ESQUERDA FIM
