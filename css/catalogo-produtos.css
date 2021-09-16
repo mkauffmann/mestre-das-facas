@@ -48,6 +48,7 @@ main, header, footer {
     justify-content: space-between;
     height: 50px;
     align-items: center;
+    align-content: flex-start;
 }
 
 .produtos-encontrados {
