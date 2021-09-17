@@ -121,3 +121,10 @@ body {
     }    
     
 }
+
+@media (max-width: 402px) {
+    .drop-ordena {
+        display: none;
+    }
+    
+}
