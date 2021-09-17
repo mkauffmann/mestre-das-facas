@@ -22,6 +22,7 @@ body {
     z-index: 2;
 }
 
+
 /* MENU MOBILE HEADER INICIO  */
 .menu-mobile-header {
     height: 50px;
@@ -146,10 +147,6 @@ body {
 .infos-lista {
     font-size: 0.8rem;
     color: #444;
-}
-
-.lista-prod {
-    border: 1px #ccc solid;
 }
 
 /* LISTA FIM  */
