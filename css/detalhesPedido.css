@@ -2,8 +2,8 @@ body {
     font-family: 'Archivo Narrow', sans-serif;
 }
 
-h1 {
-    color: #F06543;
+h1, h2 {
+    color: #860E1C;
     font-weight: bold;
     font-size: 32px;
     margin-top: 2%;
@@ -15,7 +15,7 @@ h1 {
 }
 
 h3 {
-    color: #F06543;
+    color: #860E1C;
     font-weight: bold;
 }
 
