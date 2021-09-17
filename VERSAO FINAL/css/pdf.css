@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+
+body, h5{
+    font-family:  'Archivo Narrow', sans-serif;
+}
+
+.teste{
+border-style: none;
+stroke: black;
+}
+
+.btn-principal{
+    background-color: #E5571A;
+    width: 200px;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 30px;
+    transition: 0.1s;
+    text-decoration: none;
+}
+
+.btn-principal:hover {
+    background-color: #FFC07F;
+    color: #860E1C;
+}
+
+.btn-cancelar {
+    background-color: white;
+    border: solid 1px #860E1C;
+    color: #860E1C;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: 0.1s;
+    text-decoration: none;
+}
+
+.btn-cancelar:hover {
+    color: white;
+    background-color: #860E1C;
+}
