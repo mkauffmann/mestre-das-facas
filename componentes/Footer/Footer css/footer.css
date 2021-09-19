@@ -1,12 +1,20 @@
-.topHeader, .midHeader, .telefone, .navegacao, .footer, .telefonesFooter, .footerMobile{
+footer{
+    font-family: 'Barlow', sans-serif;
+}
+
+.footer, .telefonesFooter, .footerMobile{
     color: #FFC07F;
     font-size: 16px;
     text-decoration: none;
     text-decoration:#FFC07F ;
 }
 
+
 .footer, .footerMobile{
-    background-color: black;
+    background-color:rgba(134, 14, 28, 1);
+    
+    font-weight: bold;
+    padding-top: 5px;
     
 }
 
@@ -14,18 +22,14 @@
     margin-left: 12%;
 }
 
-.atendimento{
-    margin-top: 1%;
-}
 
 
-.iconBoleto, .espaco{
+
+.iconBoleto{
     margin-left: 2%;
 }
 
-.final, .iconeRed{
-    margin-top: 1%;
-}
+
 
 
 
@@ -38,15 +42,24 @@
     padding: 2%;
 }
 
-@media (min-width:848px) {
+@media (min-width:869px) {
     .footerMobile, .listMobile{
         display: none;
     }
     
 }
-@media (max-width:848px){
+@media (max-width:869px){
     .final, .endereco, .footer{
         display: none;
         
     }   
+}
+
+.final, .finalMobile{
+    color: rgba(255, 255, 255, 0.774);
+    font-weight: normal;
+}
+
+.linkFooter:hover, .telefonesFooter:hover{
+ color: #d1781ff3;
 }

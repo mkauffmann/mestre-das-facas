@@ -1,13 +1,18 @@
-.topHeader, .midHeader, .telefone, .navegacao{
-    color: #FFC07F;
+.topHeader, .midHeader, .telefone, .navegacao, .blocoTelefone{
+    color: #ffbf7f;
     font-size: 16px;
     text-decoration: none;
     text-decoration:#FFC07F ;
+    text-align: center;
+    font-weight: bold;
 }
 .logo{
-    font-size: 30px;
+    
     font-weight: bold;
     color: black;
+    display: flex;
+    justify-content: center;
+    
     
     }
 
@@ -27,8 +32,14 @@
 
 .Barranavegacao{
     background-color: rgba(23, 9, 0, 1);
-    padding: 8px;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
     
+}
+
+.navegacao:hover, .telefone:hover{
+    color: #d1781ff3;
 }
 
 
@@ -59,13 +70,13 @@
         display: none;
     }
 }
-@media (max-width:1420px) {
+@media (max-width:1486px) {
     .blocoTelefone{
         display: none;
     }
 }
-@media (max-width:990px) {
-    .blocoMeusPedidos, .blocoMinhaLista, nav{
+@media (max-width:991px) {
+    .blocoMeusPedidos, .blocoMinhaLista, .navDesktop{
         display: none;
     }
 }
@@ -76,4 +87,8 @@
         display: none;
     }
     
+}
+
+.blocoMeusPedidos, .blocoMinhaLista{
+    font-weight: bold;
 }
