@@ -34,6 +34,12 @@ body, main, header, footer {
     font-weight: bold;
 }
 
+.btn-comprar {
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+}
+
 .texto-desconto, .texto-categoria {
     color: #860E1C;
 }
