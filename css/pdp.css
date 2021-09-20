@@ -105,7 +105,7 @@ body, main, header, footer {
     height: 40px;
 }
 
-@media (min-width:400px) and (max-width: 768px) {
+@media (min-width:280px) and (max-width: 768px) {
     .caixa-cor-cabo {
         margin-bottom: 20px;
     }
